@@ -2,22 +2,22 @@
   "name": "amazona",
   "type": "module",
   "version": "1.0.0",
-  "description": "OMART enye",
+  "description": "Omart",
   "main": "index.js",
   "scripts": {
+    "frontend": "cd client && npm start",
+    "backend": "cd backend && nodemon server.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jacob-d242/AmOmart.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
