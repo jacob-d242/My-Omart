@@ -22,10 +22,15 @@ body {
     'main'
     'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-rows: 40px 40px 40px 40px 40px;
   height: 100%;
 }
 header {
+  padding: 1rem;
+  position: fixed;
+ 
+  left: 0;
+  width: 100%;
   grid-area: header;
   background-color: #203040;
 }
@@ -34,6 +39,12 @@ main {
   padding: 1rem;
 }
 footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   grid-area: footer;
   background-color: #203040;
   color: #ffffff;
@@ -75,7 +86,7 @@ button {
   -moz-osx-font-smoothing: grayscale;
 }
 button {
-  background-color: #f8f8f8;
+  background-color: yellow;
   cursor: pointer;
 }
 input:hover,
@@ -197,7 +208,7 @@ img.medium {
 }
 img.large {
   max-height:50%;
-  width: 100%;
+  width: 80%;
 }
 
 /* Card */
